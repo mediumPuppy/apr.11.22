@@ -11,11 +11,10 @@ app.use(express.static('public'))
 let knex = require("knex")({
     client: "pg" ,
     connection: {
-        host: "localhost",
-        server: "PostgreSQL 14",
-        user: "postgres",
-        password: "Jeffron31!",
-        database: "postgres",
+        host: "ec2-3-217-251-77.compute-1.amazonaws.com",
+        user: "zyxzmpeehicrcz",
+        password: "3d8c46ca196f3149d6509d16b18a1e61735b99c69ad352d4276a0588cbf1c855",
+        database: "dcps5bb1vbrkva",
         port: 5432
     },
     useNullAsDefault: true
