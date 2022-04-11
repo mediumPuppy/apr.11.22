@@ -22,8 +22,6 @@ let knex = require("knex")({
 
 app.use(express.urlencoded({extended: true}));
 
-app.listen(listenPort, function() {console.log("Listener active on port " + listenPort);});
-
 
 app.get("/deleteItem/:vehicle_id",(req,res) => {
     knex("Vehicle").where('vehicle_id', req.params.vehicle_id).del()
