@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Menu Item</title>
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+<body>
+    <div class=''>
+        <nav class="d-flex flex-row justify-content-start align-middle navbar navbar-light bg-light mb-2">
+            <span class="navbar-brand">Update Vehicle
+            </span>
+        </nav>
+    </div>
+    <form method="post" action="/updateItem" class="form-group" style="">
+
+    <input type="hidden" name="vehicle_id" class="form-control" value="<%= theMenu[0].vehicle_id%>">
+
+    <label for="vDescription">Description: </label>
+    <input type="text" id="vDescription" class="form-control" name="vDescription" value="<%= theMenu[0].vDescription%>">
+    <br>
+
+    <label for="vType">Type(C,T,B,M): </label>
+    <input type="text" id="vType" class="form-control" name="vType" value="<%= theMenu[0].vType%>">
+    <br>
+
+   
+
+    <label for="vYear">Year: </label>
+    <input type="text" id="vYear" class="form-control" name="vYear" value="<%= theMenu[0].vYear%>" >
+    <br>
+
+    <label for="vMileage">Mileage: </label>
+    <input type="text" id="vMileage" class="form-control" name="vMileage" value="<%= theMenu[0].vMileage%>">
+    <br>
+
+    <label for="vStillUsing">In Use? (Y or N): </label>
+    <input type="text" id="vStillUsing" class="form-control" name="vStillUsing" value="<%= theMenu[0].vStillUsing%>">
+    <br>
+    
+    
+    
+    <br>
+    <button class="btn btn-dark" type="submit">Update Vehicle</button>
+    </form>
+    <button class="btn btn-secondary" onclick="(window.location.assign('/displayvehicle'))">Cancel</button>
+
+
+</body>
+</html>
