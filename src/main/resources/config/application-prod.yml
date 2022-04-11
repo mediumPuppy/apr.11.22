@@ -1,0 +1,13 @@
+spring:
+    devtools:
+        restart:
+            enabled: false
+        livereload:
+            enabled: false
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        url: jdbc:postgresql://@ec2-3-217-251-77.compute-1.amazonaws.com:5432/dcps5bb1vbrkva
+        username: zyxzmpeehicrcz
+        password: 3d8c46ca196f3149d6509d16b18a1e61735b99c69ad352d4276a0588cbf1c855
+        hikari:
+            auto-commit: false
